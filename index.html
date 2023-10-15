@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        .row {
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        img {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+    <title>Bootstrap Layout</title>
+</head>
+
+<body>
+        <div class="container-fluid">
+            <!-- Top row with Logo and Bienvenidos -->
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <img src="Yamaha-R15-Logo-Vector.jpg" alt="Yamaha 15 Logo" width="300" height="300">
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12"><h1></h1>BIENVENIDOS FANATICOS DE LAS R15</h1></div>
+                        <div class="col-md-12">Los fanaticos de las R15 tenemos nuestra propia comunidad donde podemos compartir nuestras hermosas motos y todas las modificaciones que tienen!</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second row with Titulo and Parrafo -->
+            <div class="row">
+                <div class="col-md-4"><h2></h2>YAMAHA YFZ-15</h2></div>
+                <div class="col-md-8">Mas que una moto, un sueño hecho realidad de la ingenieria</div>
+            </div>
+
+            <!-- Third row with Modelos Lista and Imagen Moto Original -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>MODELOS LISTA</h3>
+                    <ul>
+                        <li>R15 V1</li>
+                        <li>R15 V2</li>
+                        <li>R15 V3</li>
+                        <li>R15 V4</li>
+                    </ul>
+                </div>
+                <div class="col-md-8"><img src="r15-azul.png" alt="Imagen Moto Original" style="width: 50%; height: auto;"></div>
+            </div>
+
+          
+            <!-- Fourth row with Moto 1, Moto 2, and Moto 3 -->
+            <div class="row">
+                <!-- Fourth row with Moto 1, Moto 2, and Moto 3 -->
+                <div class="row">
+                    <div class="col-md-4"><img src="color1-300x300.png" alt="Moto 1" class="moto-img"></div>
+                    <div class="col-md-4"><img src="r15_2023_1.jpg" alt="Moto 2" class="moto-img"></div>
+                    <div class="col-md-4"><img src="yamaha-r15-v4-red.jpg" alt="Moto 3" class="moto-img"></div>
+                </div>
+
+                <style>
+                    .moto-img {
+                        height: 300px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                </style>
+                </div>
+
+                <!-- Fifth row with Email and Aporte -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <label for="email-input">Email:</label>
+                        <input type="email" id="email-input" name="email">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>APORTE</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="aporte-image">Imagen:</label>
+                                <input type="file" class="form-control-file" id="aporte-image">
+                            </div>
+                            <div class="form-group">
+                                <label for="aporte-text">Texto:</label>
+                                <textarea class="form-control" id="aporte-text" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Bootstrap JavaScript, Popper.js, and jQuery -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                </body>
+
+
